@@ -1,0 +1,257 @@
+@import "grid.css";
+
+.text-center {
+    text-align:  center;
+}
+
+#psyco-maps .section select {
+    width:  100%;
+}
+
+#psyco-maps p,#psyco-maps b,#psyco-maps a,#psyco-maps blockquote,
+#psyco-maps label,#psyco-maps input,#psyco-maps textarea,#psyco-maps button{
+  font-family: 'Fira Sans', sans-serif;
+}
+#psyco-maps h1,#psyco-maps h2,#psyco-maps h3,#psyco-maps h4{
+  font-family: 'Fira Sans', sans-serif;
+  color: #808A9F;
+}
+
+#psyco-maps [type="radio"]::before {
+    background-color: #fff;
+}
+
+#psyco-maps .header{
+  padding: 20px;
+  margin-top:10px;
+  background: #5A3F75; /* Old browsers */
+}
+
+#psyco-maps {
+  position:relative;
+  padding-bottom:30px;
+}
+
+#psyco-maps .h{
+  padding: 20px;
+  background: #333; /* Old browsers */
+}
+
+#psyco-maps .header h1 {
+    color:  white;
+    text-align:  center;
+    letter-spacing: 2px;
+}
+
+#psyco-maps input,#psyco-maps textarea{
+  border-radius: 5px;
+}
+
+#psyco-maps .section {
+    padding: 20px 40px 50px;
+    border: 1px solid #ccc;
+    background-color:  white;
+}
+
+#psyco-maps .section label {
+    padding: 5px 10px 5px 0px;
+    display: block;
+    color: #808A9F;
+}
+
+#psyco-maps .section .group {
+    margin-bottom: 10px;
+}
+
+#psyco-maps .response{
+    position: fixed;
+    right: 0;
+    width: 150px;
+    display:  none;
+    height:  50px;
+    background:  white;
+    padding: 15px;
+    border: 1px solid;
+    border-right:  0px;
+    text-transform:  uppercase;
+    letter-spacing:  2px;
+}
+
+
+#psyco-maps .response i {
+    margin-right:  15px;
+    font-size:  20px;
+}
+
+#psyco-maps button.save {
+    border:  0px;
+    border-radius: 0px;
+    background-color: #5A3F75;
+    outline: none;
+    color:  white;
+    padding:  8px 20px;
+    cursor: pointer;
+}
+
+#psyco-maps button.save.on{
+  animation: wiggle 2s linear infinite;
+}
+
+@keyframes wiggle {
+  0%, 7% {
+    transform: rotateZ(0);
+  }
+  15% {
+    transform: rotateZ(-15deg);
+  }
+  20% {
+    transform: rotateZ(10deg);
+  }
+  25% {
+    transform: rotateZ(-10deg);
+  }
+  30% {
+    transform: rotateZ(6deg);
+  }
+  35% {
+    transform: rotateZ(-4deg);
+  }
+  40%, 100% {
+    transform: rotateZ(0);
+  }
+}
+
+#psyco-maps [type="radio"] {
+    display:  inline-block;
+    border: 1px solid #BFBFBF;
+    color: #fff !important;
+    background: #BFBFBF;
+}
+
+#psyco-maps textarea,#psyco-maps input[type="text"] {
+    outline: none !important;
+    border: none !important;
+    color: #BFBFBF;
+    border-bottom: 1px solid #E8E8E8 !important;
+    width:  100%;
+    transition: color 1s, background-color .6s;
+    margin:  5px 0px;
+    box-shadow: none !important;
+    border-radius:  0px !important;
+}
+
+#psyco-maps input[type="number"] {
+    border: none !important;
+    box-shadow:  none !important;
+    width: 55px;
+    border-bottom: 1px solid #333 !important;
+    padding:  10px;
+    outline:none;
+}
+
+#psyco-maps .markers .marker dd {
+    height: auto;
+    overflow: hidden;
+    transition: max-height 1s;
+    background-color: #eee;
+    font-size: 1em;
+    line-height: 1.5em;
+    margin:  0;
+}
+
+#psyco-maps .markers .marker dd div{
+  padding: 2px 0px;
+}
+
+#psyco-maps .markers .marker dd span:nth-of-type(2){
+  font-size: 10px;
+  /* line-height:  40px; */
+  font-style: italic;
+}
+
+#psyco-maps .markers .marker dd span:nth-of-type(1) {
+    text-transform:  capitalize;
+    font-size:  11px;
+    line-height:  17px;
+}
+
+#psyco-maps .markers .marker dt {
+    padding: 5px;
+    font-size: 12px;
+    font-weight:  bolder;
+    letter-spacing: 1.5px;
+    background: #2cdc2c;
+    color:  white;
+    text-align:  center;
+    cursor:  pointer;
+}
+
+.markers .marker dt i {
+    position:  absolute;
+    left: 10px;
+    top: 9px;
+}
+
+.markers .marker dt {
+    position:  relative;
+}
+
+.marker textarea {
+    border: 1px solid #333 !important;
+    padding:  5px 10px;
+    width:  80% !important;
+    margin-left: 15px !important;
+    height:  50px !important;
+}
+
+#psyco-maps .header h1 sup {
+    font-size: 12px;
+    line-height:  17px;
+}
+
+#psyco-maps small {
+    margin-top: -20px;
+    display:  block;
+}
+
+#psyco-maps textarea[name="styles"] {
+    padding:  0px;
+    background-image: -webkit-linear-gradient(left, white 10px, transparent 10px), -webkit-linear-gradient(right, white 10px, transparent 10px), -webkit-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -moz-linear-gradient(left, white 10px, transparent 10px), -moz-linear-gradient(right, white 10px, transparent 10px), -moz-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -ms-linear-gradient(left, white 10px, transparent 10px), -ms-linear-gradient(right, white 10px, transparent 10px), -ms-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: -o-linear-gradient(left, white 10px, transparent 10px), -o-linear-gradient(right, white 10px, transparent 10px), -o-linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-image: linear-gradient(left, white 10px, transparent 10px), linear-gradient(right, white 10px, transparent 10px), linear-gradient(white 30px, #ccc 30px, #ccc 31px, white 31px);
+    background-size: 100% 100%, 100% 100%, 100% 31px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+    line-height: 31px;
+    border-radius: 0px !important;
+}
+
+
+#psyco-maps code {
+    background-color: #808A9F;
+    margin: 10px 0px;
+    padding: 12px 20px;
+    color: #E8E8E8;
+    display:  inline-block;
+}
+
+#psyco-maps .marker input[type="text"] {width: 80%;margin-left: 15px;padding: 8px 10px;}
+
+dl.marker dd {padding:  3px 10px;}
+
+
+#psyco-maps textarea::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+#psyco-maps textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+#psyco-maps textarea::-webkit-scrollbar-thumb {
+  background-color: #BFBFBF;
+  outline: 1px solid #BFBFBF;
+}
